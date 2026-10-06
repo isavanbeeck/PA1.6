@@ -6,12 +6,12 @@ class RNG:
 
     def gauss(self, mu: float, sigma: float) -> float:
         ''' Return a random float following a Gaussian distribution with mean mu and standard deviation sigma. '''
-        return 0 #float(self.rng ###)
+        return float(self.rng.normal(mu, sigma))
 
     def uniform(self, a: float, b: float) -> float:
         ''' Return a random float in the range [a, b) following a uniform distribution. '''
-        return 0 #float(self.rng ###)
+        return float(self.rng.uniform(a, b))
 
     def bernoulli(self, p: float) -> bool:
         ''' Return True with probability p, False with probability 1-p. '''
-        return 0 #bool(self.rng ###)
+        return bool(self.rng.random() < p)

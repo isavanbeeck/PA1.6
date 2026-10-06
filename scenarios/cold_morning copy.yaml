@@ -2,9 +2,9 @@ env:
   base: 5.0
   amplitude: 2.0
   period_s: 7200
-  door_drop_C: 10.0
+  door_drop_C: 5.0
   door_start_s: 1200
-  door_duration_s: 600
+  door_duration_s: 120
 
 sensor:
   sigma: 0.2
